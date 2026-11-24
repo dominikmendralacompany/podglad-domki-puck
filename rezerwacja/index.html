@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wolne terminy i rezerwacja domku w Pucku - lato 2027</title>
+<meta name="description" content="Sprawdź wolne terminy w domkach w Pucku: wybierz daty i liczbę osób, porównaj domki i ceny za pobyt, wyślij rezerwację bezpośrednio do gospodarza.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-base="../" data-page="rezerwacja">
+<div class="demo-bar"><b>Wizualizacja strony</b> przygotowana przez Dominik Mendrala Company dla właściciela domków - to nie jest oficjalna strona obiektu. Ceny i wolne terminy są przykładowe, formularz niczego nie wysyła.</div>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="../" aria-label="Domki Zosia i Helenka - strona główna">
+      <span class="logo-mark" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+      <span class="logo-txt">Zosia i Helenka<small>Domki wypoczynkowe · Puck</small></span>
+    </a>
+    <ul class="menu"><li><a href="../domki/">Domki</a></li><li><a href="../rezerwacja/" class="on" aria-current="page">Wolne terminy</a></li><li><a href="../galeria/">Galeria</a></li><li><a href="../okolica/">Okolica i atrakcje</a></li><li><a href="../zasady-pobytu/">Zasady pobytu</a></li><li><a href="../kontakt/">Kontakt</a></li></ul>
+    <div class="nav-right"><a class="btn btn-wood" href="../rezerwacja/">Zarezerwuj</a></div>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" onclick="const h=this.closest('header');h.classList.toggle('open');this.setAttribute('aria-expanded',h.classList.contains('open'))"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="page-hero" style="background-image:linear-gradient(180deg,rgba(15,51,73,.55),rgba(15,51,73,.85)),url('../img/taras-domku-puck.jpg')">
+  <div class="wrap"><div class="crumbs"><a href="../">Strona główna</a> › Wolne terminy</div><h1>Wolne terminy i rezerwacja domku</h1><p>Wybierz daty i liczbę osób, porównaj wolne domki i cenę za cały pobyt, a potem wyślij rezerwację prosto do gospodarza - bez prowizji portalu.</p></div>
+</section>
+<section id="szukaj" style="background:var(--sand);padding-top:40px"><div class="wrap">
+  <div class="steps"><span><b>1</b>Termin i goście</span><span><b>2</b>Wybór domku</span><span><b>3</b>Rezerwacja</span></div>
+  <form class="search inline" id="searchForm" action="" method="get">
+      <label>Przyjazd<input type="date" id="sIn" name="in" min="2027-05-01" max="2027-09-29" value="2027-07-10" required></label>
+      <label>Wyjazd<input type="date" id="sOut" name="out" min="2027-05-02" max="2027-09-30" value="2027-07-17" required></label>
+      <label>Goście
+        <select id="sGuests" name="g"><option value="2">2 osoby</option><option value="3">3 osoby</option><option value="4" selected>4 osoby</option><option value="5">5 osób</option><option value="6">6 osób</option></select>
+      </label>
+      <button class="btn btn-wood" type="submit">Sprawdź wolne domki</button>
+    </form>
+  <h2 class="results-head" id="resultsHead"></h2>
+  <div class="results" id="results"></div>
+</div></section>
+<section id="kalendarz"><div class="wrap">
+  <h2>Kalendarz wolnych terminów</h2>
+  <p class="lead">Wybierz domek, kliknij dzień przyjazdu, a potem dzień wyjazdu. Od razu zobaczysz cenę za cały pobyt. Gospodarz potwierdza rezerwację mailem lub telefonicznie.</p>
+  <div class="cal-box">
+    <div>
+      <div class="tabs" id="tabs"></div>
+      <div class="cal-head"><button type="button" id="prev" aria-label="Poprzedni miesiąc">‹</button><strong style="color:var(--navy)">Sezon 2027</strong><button type="button" id="next" aria-label="Następny miesiąc">›</button></div>
+      <div class="months" id="months"></div>
+      <div class="legend"><span><i style="background:#f1f8f4;border:1px solid #cfe6d8"></i>wolny</span><span><i style="background:#e2e6e9"></i>zajęty</span><span><i style="background:var(--sea)"></i>Twój pobyt</span><span><i style="background:#f6f7f8;border:1px solid var(--line)"></i>poza sezonem</span></div>
+    </div>
+    <aside class="summary">
+      <h3>Twój pobyt</h3>
+      <div class="no-fee">Rezerwacja bezpośrednia - bez prowizji portalu</div>
+      <div class="sum-row"><span>Domek</span><span id="sumCabin">-</span></div>
+      <div class="sum-row"><span>Przyjazd</span><span id="sumIn">-</span></div>
+      <div class="sum-row"><span>Wyjazd</span><span id="sumOut">-</span></div>
+      <div class="sum-row"><span>Liczba nocy</span><span id="sumNights">-</span></div>
+      <div class="sum-total"><span>Razem</span><b id="sumTotal">-</b></div>
+      <button class="btn btn-wood" id="bookBtn" disabled>Rezerwuj ten termin</button>
+      <p class="hint">Zameldowanie 16:00-22:00, wymeldowanie 7:00-10:00. Zwierzę: 50 zł za dzień.</p>
+    </aside>
+  </div>
+</div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>Domki wypoczynkowe Zosia i Helenka</h4>
+        <p>ul. Drzeżdżona 10, 84-100 Puck<br>telefon i e-mail gospodarza (uzupełnimy)<br>Sezon: maj - wrzesień</p>
+      </div>
+      <div>
+        <h4>Na stronie</h4>
+        <p><a href="../domki/">Domki</a><br><a href="../rezerwacja/">Wolne terminy</a><br><a href="../galeria/">Galeria</a><br><a href="../okolica/">Okolica i atrakcje</a></p>
+      </div>
+      <div>
+        <h4>Informacje</h4>
+        <p><a href="../zasady-pobytu/">Zasady pobytu</a><br><a href="../kontakt/">Kontakt i dojazd</a><br><a href="#">Regulamin</a><br><a href="#">Polityka prywatności</a></p>
+      </div>
+    </div>
+    <div class="copy"><span>© 2027 Domki wypoczynkowe Zosia i Helenka</span><span>Strona: <a href="https://dmcompany.com.pl">Dominik Mendrala Company</a></span></div>
+  </div>
+</footer>
+<a class="btn btn-wood mobile-cta" href="../rezerwacja/">Sprawdź wolne terminy</a>
+<div class="modal" id="modal" role="dialog" aria-label="Rezerwacja">
+  <div class="modal-box">
+    <button class="x" id="mClose" aria-label="Zamknij">×</button>
+    <div id="mForm">
+      <h3>Rezerwacja domku</h3>
+      <div class="mini" id="mSummary"></div>
+      <form id="bookForm">
+        <label class="f">Imię i nazwisko<input required autocomplete="name" placeholder="Jan Kowalski"></label>
+        <label class="f">E-mail<input type="email" required autocomplete="email" placeholder="jan.kowalski@example.com"></label>
+        <label class="f">Telefon<input type="tel" required autocomplete="tel" placeholder="500 000 000"></label>
+        <label class="f">Liczba osób i uwagi (np. pies, łóżeczko, godzina przyjazdu)<textarea rows="3"></textarea></label>
+        <label class="chk"><input type="checkbox" required> Zapoznałem się z regulaminem i polityką prywatności. Dane z formularza służą tylko do obsługi rezerwacji.</label>
+        <button class="btn btn-wood" style="width:100%;margin-top:16px" type="submit">Wyślij rezerwację</button>
+      </form>
+    </div>
+    <div class="ok-msg" id="mOk">
+      <div class="ico">✓</div>
+      <h3>Dziękujemy!</h3>
+      <p style="color:var(--muted);margin-top:8px">Na prawdziwej stronie w tym miejscu gość dostaje potwierdzenie, a gospodarz maila z rezerwacją. W wizualizacji nic nie zostało wysłane.</p>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

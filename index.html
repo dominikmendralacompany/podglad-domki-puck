@@ -3,233 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Domki letniskowe w Pucku z placem zabaw, 1 km od plaży - Zosia i Helenka</title>
+<title>Domki letniskowe w Pucku z placem zabaw dla dzieci, 1 km od plaży</title>
 <meta name="description" content="Drewniane domki dla 5-6 osób w Pucku: taras, kuchnia, Wi-Fi, ogrodzony plac zabaw i parking. 1 km do Dzikiej Plaży, sezon maj-wrzesień. Sprawdź wolne terminy.">
 <meta name="robots" content="noindex">
-<style>
-:root{
-  --navy:#0f3349; --sea:#16707f; --sea-l:#e3f1f2; --sand:#f6f1e8; --wood:#c9762f; --wood-d:#a85f22;
-  --ink:#1d2a33; --muted:#5d6b75; --line:#e2e6e9; --ok:#1f8a4c; --busy:#c9ced3; --white:#fff;
-  --r:14px; --shadow:0 10px 30px rgba(15,51,73,.12);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:16px}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;color:var(--navy)}
-h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:.6rem}
-h3{font-size:1.25rem}
-.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.lead{color:var(--muted);max-width:720px;font-size:1.05rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:10px;padding:13px 22px;font-weight:700;font-size:1rem;cursor:pointer;text-decoration:none;transition:.2s}
-.btn-wood{background:var(--wood);color:#fff}.btn-wood:hover{background:var(--wood-d)}
-.btn-line{background:transparent;border:2px solid var(--navy);color:var(--navy)}.btn-line:hover{background:var(--navy);color:#fff}
-.btn:disabled{opacity:.45;cursor:not-allowed}
-
-/* pasek demo */
-.demo-bar{background:var(--navy);color:#cfe3ea;font-size:.82rem;text-align:center;padding:6px 12px}
-.demo-bar b{color:#fff}
-
-/* nagłówek */
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo-mark{width:40px;height:40px;border-radius:10px;background:var(--sea);display:grid;place-items:center;color:#fff}
-.logo-txt{font-family:Georgia,serif;font-size:1.2rem;color:var(--navy);line-height:1.1}
-.logo-txt small{display:block;font-family:system-ui,sans-serif;font-size:.72rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-.menu{display:flex;gap:22px;list-style:none}
-.menu a{text-decoration:none;font-weight:600;color:var(--ink);font-size:.95rem;white-space:nowrap}
-.menu a:hover{color:var(--sea)}
-.nav-right{display:flex;align-items:center;gap:14px}
-.phone{font-weight:700;color:var(--navy);text-decoration:none;font-size:.95rem;white-space:nowrap}
-.logo-txt{white-space:nowrap}
-@media(max-width:1200px){.phone{display:none}}
-@media(max-width:1000px){.menu{display:none}}
-@media(max-width:560px){.nav-right{display:none}.hero{min-height:0;padding-top:40px}}
-
-/* hero */
-.hero{position:relative;min-height:620px;display:flex;align-items:flex-end;padding:0 0 60px;color:#fff;
-  background:linear-gradient(180deg,rgba(15,51,73,.15) 0%,rgba(15,51,73,.25) 45%,rgba(15,51,73,.85) 100%),url("img/domki-letniskowe-puck.jpg") center/cover}
-.hero h1{color:#fff;font-size:clamp(2rem,4.6vw,3.3rem);max-width:780px;margin-bottom:14px}
-.hero p{max-width:640px;font-size:1.12rem;color:#eaf3f6}
-.badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 28px}
-.badge{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:6px 14px;font-size:.9rem;font-weight:600}
-.badge.score{background:#fff;color:var(--navy)}
-.badge.score b{background:var(--navy);color:#fff;border-radius:6px;padding:1px 7px;margin-right:6px}
-
-/* pasek rezerwacji */
-.search{background:#fff;color:var(--ink);border-radius:var(--r);box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:0;overflow:hidden;max-width:960px;border:3px solid var(--wood)}
-.search label{display:flex;flex-direction:column;padding:12px 18px;border-right:1px solid var(--line);font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
-.search input,.search select{border:0;font-size:1rem;font-weight:600;color:var(--ink);padding:4px 0 0;background:transparent;font-family:inherit;outline:none}
-.search .btn{border-radius:0;padding:0 30px}
-@media(max-width:760px){.search{grid-template-columns:1fr 1fr}.search label:nth-child(2){border-right:0}.search label{border-bottom:1px solid var(--line)}.search .btn{grid-column:1/-1;padding:15px}}
-
-/* liczby */
-.facts{background:var(--sand);padding:34px 0}
-.facts .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
-.fact{text-align:center}
-.fact strong{display:block;font-family:Georgia,serif;font-size:1.7rem;color:var(--sea)}
-.fact span{font-size:.9rem;color:var(--muted)}
-@media(max-width:760px){.facts .wrap{grid-template-columns:repeat(2,1fr)}}
-
-/* domki */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
-@media(max-width:960px){.cards{grid-template-columns:1fr}}
-.card{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:.2s}
-.card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
-.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
-.card-body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
-.card ul{list-style:none;display:flex;flex-direction:column;gap:5px;font-size:.94rem;color:var(--muted)}
-.card ul li::before{content:"✓ ";color:var(--ok);font-weight:700}
-.card-foot{display:flex;align-items:flex-end;justify-content:space-between;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
-.price{font-size:.85rem;color:var(--muted)}
-.price b{font-size:1.5rem;color:var(--navy);font-family:Georgia,serif}
-.avail{font-size:.85rem;font-weight:700;border-radius:6px;padding:3px 8px;display:none}
-.avail.free{display:inline-block;background:#e4f4ea;color:var(--ok)}
-.avail.taken{display:inline-block;background:#f6e3e3;color:#a33}
-.guests-tag{display:inline-block;background:var(--sea-l);color:var(--sea);font-weight:700;font-size:.82rem;border-radius:6px;padding:3px 9px;width:max-content}
-
-/* kalendarz */
-#kalendarz{background:var(--sand)}
-.cal-box{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:26px;margin-top:28px;display:grid;grid-template-columns:1fr 320px;gap:30px}
-@media(max-width:960px){.cal-box{grid-template-columns:1fr;padding:18px}}
-.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
-.tab{border:2px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;font-weight:700;cursor:pointer;font-size:.9rem;color:var(--ink)}
-.tab.on{border-color:var(--sea);background:var(--sea);color:#fff}
-.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
-.cal-head button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:1.2rem;cursor:pointer}
-.cal-head button:disabled{opacity:.3;cursor:default}
-.months{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-@media(max-width:640px){.months{grid-template-columns:1fr}.months .month:nth-child(2){display:none}}
-.month h4{text-align:center;font-family:Georgia,serif;color:var(--navy);font-size:1.1rem;margin-bottom:8px;text-transform:capitalize}
-.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
-.dow{text-align:center;font-size:.75rem;font-weight:700;color:var(--muted);padding:4px 0}
-.day{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:8px;font-size:.92rem;font-weight:600;cursor:pointer;border:0;background:#f1f8f4;color:var(--ink);position:relative;font-family:inherit}
-.day small{font-size:.6rem;font-weight:600;color:var(--ok);line-height:1}
-.day:hover:not(:disabled){outline:2px solid var(--sea)}
-.day.empty{background:transparent;cursor:default}
-.day.busy{background:repeating-linear-gradient(45deg,#eceff1,#eceff1 4px,#e2e6e9 4px,#e2e6e9 8px);color:#9aa4ab;text-decoration:line-through;cursor:not-allowed}
-.day.off{background:#f6f7f8;color:#c2c8cc;cursor:not-allowed}
-.day.in-range{background:var(--sea-l);color:var(--sea);border-radius:0}
-.day.start,.day.end{background:var(--sea);color:#fff}
-.day.start small,.day.end small,.day.in-range small{color:inherit}
-.legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-size:.82rem;color:var(--muted)}
-.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:6px}
-.summary{border:1px solid var(--line);border-radius:var(--r);padding:20px;align-self:start;position:sticky;top:90px}
-.summary h3{margin-bottom:12px}
-.sum-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
-.sum-row span:first-child{color:var(--muted)}
-.sum-total{display:flex;justify-content:space-between;align-items:baseline;margin:14px 0 16px}
-.sum-total b{font-family:Georgia,serif;font-size:1.7rem;color:var(--navy)}
-.summary .btn{width:100%}
-.hint{font-size:.82rem;color:var(--muted);margin-top:10px}
-.no-fee{background:#e4f4ea;color:var(--ok);font-weight:700;font-size:.85rem;border-radius:8px;padding:8px 10px;margin-bottom:12px}
-
-/* galeria */
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:10px;margin-top:28px}
-.gallery button{border:0;padding:0;cursor:zoom-in;border-radius:10px;overflow:hidden;background:#ddd}
-.gallery img{width:100%;height:100%;object-fit:cover;transition:.3s}
-.gallery button:hover img{transform:scale(1.05)}
-.gallery .big{grid-column:span 2;grid-row:span 2}
-@media(max-width:760px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px}}
-.lightbox{position:fixed;inset:0;background:rgba(8,20,28,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
-.lightbox.on{display:flex}
-.lightbox img{max-height:86vh;border-radius:10px}
-.lb-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.15);color:#fff;border:0;width:52px;height:52px;border-radius:50%;font-size:1.6rem;cursor:pointer}
-.lb-prev{left:18px}.lb-next{right:18px}
-.lb-close{position:absolute;top:16px;right:20px;background:none;border:0;color:#fff;font-size:2rem;cursor:pointer}
-
-/* opinie */
-.reviews{display:grid;grid-template-columns:300px 1fr;gap:40px;margin-top:28px;align-items:start}
-@media(max-width:860px){.reviews{grid-template-columns:1fr}}
-.score-box{background:var(--navy);color:#fff;border-radius:var(--r);padding:26px;text-align:center}
-.score-box .big{font-family:Georgia,serif;font-size:3.4rem;line-height:1}
-.score-box p{color:#cfe3ea;font-size:.92rem;margin-top:6px}
-.bars{display:flex;flex-direction:column;gap:12px}
-.bar-row{display:grid;grid-template-columns:200px 1fr 40px;gap:12px;align-items:center;font-size:.94rem}
-.bar{height:9px;background:var(--line);border-radius:9px;overflow:hidden}
-.bar i{display:block;height:100%;background:var(--sea);border-radius:9px}
-@media(max-width:520px){.bar-row{grid-template-columns:130px 1fr 34px}}
-.themes{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.themes span{background:var(--sea-l);color:var(--sea);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.9rem}
-
-/* okolica */
-.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:28px;align-items:start}
-@media(max-width:860px){.two{grid-template-columns:1fr}}
-.dist{list-style:none;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
-.dist li{display:flex;justify-content:space-between;gap:12px;padding:13px 18px;border-bottom:1px solid var(--line)}
-.dist li:last-child{border-bottom:0}
-.dist li b{color:var(--sea);white-space:nowrap}
-.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:340px;background:var(--sea-l)}
-.map iframe{width:100%;height:100%;min-height:340px;border:0}
-
-/* zasady */
-table{width:100%;border-collapse:collapse;margin-top:24px;font-size:.96rem}
-th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
-th{width:32%;color:var(--navy);background:var(--sand)}
-
-/* faq */
-details{border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-top:12px;background:#fff}
-summary{font-weight:700;cursor:pointer;color:var(--navy)}
-details p{margin-top:10px;color:var(--muted)}
-
-/* stopka */
-footer{background:var(--navy);color:#cfe3ea;padding:50px 0 26px}
-.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
-@media(max-width:760px){.foot{grid-template-columns:1fr}}
-footer h4{color:#fff;font-family:Georgia,serif;margin-bottom:10px;font-size:1.1rem}
-footer a{color:#cfe3ea}
-.copy{border-top:1px solid rgba(255,255,255,.15);margin-top:30px;padding-top:16px;font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-
-/* okno rezerwacji */
-.modal{position:fixed;inset:0;background:rgba(8,20,28,.6);display:none;align-items:center;justify-content:center;z-index:120;padding:16px}
-.modal.on{display:flex}
-.modal-box{background:#fff;border-radius:var(--r);max-width:520px;width:100%;max-height:92vh;overflow:auto;padding:26px;position:relative}
-.modal-box h3{margin-bottom:6px}
-.modal-box .x{position:absolute;top:12px;right:16px;border:0;background:none;font-size:1.7rem;cursor:pointer;color:var(--muted)}
-.f{display:flex;flex-direction:column;gap:5px;margin-top:12px;font-size:.9rem;font-weight:600}
-.f input,.f textarea{border:1px solid #cdd4d9;border-radius:8px;padding:11px;font:inherit;font-weight:400}
-.chk{display:flex;gap:8px;align-items:flex-start;font-size:.8rem;color:var(--muted);margin-top:12px;font-weight:400}
-.mini{background:var(--sand);border-radius:10px;padding:12px 14px;font-size:.9rem;margin-top:10px}
-.ok-msg{display:none;text-align:center;padding:20px 0}
-.ok-msg .ico{width:64px;height:64px;border-radius:50%;background:#e4f4ea;color:var(--ok);display:grid;place-items:center;font-size:2rem;margin:0 auto 12px}
-
-/* przycisk na telefonie */
-.mobile-cta{display:none}
-@media(max-width:760px){.mobile-cta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;box-shadow:var(--shadow)}footer{padding-bottom:90px}}
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-
+<body data-base="" data-page="start">
 <div class="demo-bar"><b>Wizualizacja strony</b> przygotowana przez Dominik Mendrala Company dla właściciela domków - to nie jest oficjalna strona obiektu. Ceny i wolne terminy są przykładowe, formularz niczego nie wysyła.</div>
-
 <header>
   <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="Domki Zosia i Helenka - strona główna">
-      <span class="logo-mark" aria-hidden="true">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
-      </span>
+    <a class="logo" href="./" aria-label="Domki Zosia i Helenka - strona główna">
+      <span class="logo-mark" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
       <span class="logo-txt">Zosia i Helenka<small>Domki wypoczynkowe · Puck</small></span>
     </a>
-    <ul class="menu">
-      <li><a href="#domki">Domki</a></li>
-      <li><a href="#kalendarz">Wolne terminy</a></li>
-      <li><a href="#galeria">Galeria</a></li>
-      <li><a href="#opinie">Opinie</a></li>
-      <li><a href="#okolica">Okolica</a></li>
-      <li><a href="#zasady">Zasady pobytu</a></li>
-    </ul>
-    <div class="nav-right">
-      <a class="phone" href="tel:+48000000000">Zadzwoń do gospodarza</a>
-      <a class="btn btn-wood" href="#kalendarz">Zarezerwuj</a>
-    </div>
+    <ul class="menu"><li><a href="domki/">Domki</a></li><li><a href="rezerwacja/">Wolne terminy</a></li><li><a href="galeria/">Galeria</a></li><li><a href="okolica/">Okolica i atrakcje</a></li><li><a href="zasady-pobytu/">Zasady pobytu</a></li><li><a href="kontakt/">Kontakt</a></li></ul>
+    <div class="nav-right"><a class="btn btn-wood" href="rezerwacja/">Zarezerwuj</a></div>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" onclick="const h=this.closest('header');h.classList.toggle('open');this.setAttribute('aria-expanded',h.classList.contains('open'))"><span></span><span></span><span></span></button>
   </div>
 </header>
-
-<main id="top">
-<section class="hero">
+<main>
+<section class="hero" style="background:linear-gradient(180deg,rgba(15,51,73,.15) 0%,rgba(15,51,73,.25) 45%,rgba(15,51,73,.85) 100%),url('img/domki-letniskowe-puck.jpg') center/cover">
   <div class="wrap">
     <h1>Domki letniskowe w Pucku z placem zabaw, 1 km od plaży</h1>
     <p>Drewniane domki dla 5-6 osób z tarasem, kuchnią i łazienką. Ogrodzony parking, ogród z grillem i duży plac zabaw dla dzieci. Rezerwujesz bezpośrednio u gospodarza, bez prowizji portalu.</p>
@@ -239,389 +32,76 @@ footer a{color:#cfe3ea}
       <span class="badge">Sezon maj - wrzesień</span>
       <span class="badge">Zwierzęta mile widziane</span>
     </div>
-    <form class="search" id="searchForm">
-      <label>Przyjazd<input type="date" id="sIn" min="2027-05-01" max="2027-09-29" value="2027-07-10"></label>
-      <label>Wyjazd<input type="date" id="sOut" min="2027-05-02" max="2027-09-30" value="2027-07-17"></label>
+    <form class="search" id="searchForm" action="rezerwacja/" method="get">
+      <label>Przyjazd<input type="date" id="sIn" name="in" min="2027-05-01" max="2027-09-29" value="2027-07-10" required></label>
+      <label>Wyjazd<input type="date" id="sOut" name="out" min="2027-05-02" max="2027-09-30" value="2027-07-17" required></label>
       <label>Goście
-        <select id="sGuests">
-          <option value="2">2 osoby</option><option value="3">3 osoby</option><option value="4" selected>4 osoby</option><option value="5">5 osób</option><option value="6">6 osób</option>
-        </select>
+        <select id="sGuests" name="g"><option value="2">2 osoby</option><option value="3">3 osoby</option><option value="4" selected>4 osoby</option><option value="5">5 osób</option><option value="6">6 osób</option></select>
       </label>
       <button class="btn btn-wood" type="submit">Sprawdź wolne domki</button>
     </form>
   </div>
 </section>
-
-<div class="facts">
-  <div class="wrap">
+<div class="facts"><div class="wrap">
     <div class="fact"><strong>1 km</strong><span>do Dzikiej Plaży</span></div>
     <div class="fact"><strong>5-6</strong><span>osób w domku</span></div>
     <div class="fact"><strong>9,3</strong><span>ocena 39 gości</span></div>
     <div class="fact"><strong>10/10</strong><span>Wi-Fi w ocenach gości</span></div>
     <div class="fact"><strong>0 zł</strong><span>łóżeczko dla dziecka 0-3 lat</span></div>
-  </div>
-</div>
-
-<section id="domki">
-  <div class="wrap">
-    <h2>Który domek wybrać?</h2>
-    <p class="lead">Mamy trzy układy domków. Każdy ma taras, salon z aneksem kuchennym i rozkładaną sofą, łazienkę z prysznicem, telewizor i Wi-Fi. Różnią się liczbą sypialni i łóżek.</p>
-    <div class="cards" id="cards"></div>
-  </div>
-</section>
-
-<section id="kalendarz">
-  <div class="wrap">
-    <h2>Wolne terminy i rezerwacja</h2>
-    <p class="lead">Wybierz domek, kliknij dzień przyjazdu, a potem dzień wyjazdu. Od razu zobaczysz cenę za cały pobyt. Gospodarz potwierdza rezerwację mailem lub telefonicznie.</p>
-    <div class="cal-box">
-      <div>
-        <div class="tabs" id="tabs"></div>
-        <div class="cal-head">
-          <button type="button" id="prev" aria-label="Poprzedni miesiąc">‹</button>
-          <strong id="calTitle" style="color:var(--navy)"></strong>
-          <button type="button" id="next" aria-label="Następny miesiąc">›</button>
-        </div>
-        <div class="months" id="months"></div>
-        <div class="legend">
-          <span><i style="background:#f1f8f4;border:1px solid #cfe6d8"></i>wolny</span>
-          <span><i style="background:#e2e6e9"></i>zajęty</span>
-          <span><i style="background:var(--sea)"></i>Twój pobyt</span>
-          <span><i style="background:#f6f7f8;border:1px solid var(--line)"></i>poza sezonem</span>
-        </div>
-      </div>
-      <aside class="summary">
-        <h3>Twój pobyt</h3>
-        <div class="no-fee">Rezerwacja bezpośrednia - bez prowizji portalu</div>
-        <div class="sum-row"><span>Domek</span><span id="sumCabin">-</span></div>
-        <div class="sum-row"><span>Przyjazd</span><span id="sumIn">wybierz w kalendarzu</span></div>
-        <div class="sum-row"><span>Wyjazd</span><span id="sumOut">-</span></div>
-        <div class="sum-row"><span>Liczba nocy</span><span id="sumNights">-</span></div>
-        <div class="sum-total"><span>Razem</span><b id="sumTotal">-</b></div>
-        <button class="btn btn-wood" id="bookBtn" disabled>Rezerwuj ten termin</button>
-        <p class="hint">Zameldowanie 16:00-22:00, wymeldowanie 7:00-10:00. Zwierzę: 50 zł za dzień.</p>
-      </aside>
+  </div></div>
+<section><div class="wrap">
+  <h2>Który domek wybrać?</h2>
+  <p class="lead">Trzy układy domków. Każdy ma taras, salon z aneksem kuchennym i rozkładaną sofą, łazienkę z prysznicem, telewizor i Wi-Fi. Różnią się liczbą sypialni i łóżek. Ceny w wizualizacji są przykładowe.</p>
+  <div class="cards"><article class="card">
+    <img src="img/salon-z-kuchnia-domek.jpg" alt="Domek 1-sypialniowy z łóżkiem podwójnym w Pucku" loading="lazy" width="500" height="375">
+    <div class="card-body"><span class="guests-tag">do 5 osób</span><h3>Domek 1-sypialniowy z łóżkiem podwójnym</h3><p class="muted" style="font-size:.93rem">Dla rodziny 2+2 albo 2+3. W sypialni łóżko podwójne i pojedyncze, w salonie rozkładana sofa dla kolejnych dwóch osób.</p>
+    <div class="card-foot"><div class="price">od <b>380 zł</b> / noc</div><a class="btn btn-line" href="domki/#a">Zobacz domek</a></div></div></article><article class="card">
+    <img src="img/aneks-kuchenny-domek.jpg" alt="Domek 1-sypialniowy z 3 łóżkami w Pucku" loading="lazy" width="500" height="375">
+    <div class="card-body"><span class="guests-tag">do 5 osób</span><h3>Domek 1-sypialniowy z 3 łóżkami</h3><p class="muted" style="font-size:.93rem">Dobry wybór dla rodziny ze starszymi dziećmi albo grupy znajomych - każdy śpi na osobnym łóżku.</p>
+    <div class="card-foot"><div class="price">od <b>380 zł</b> / noc</div><a class="btn btn-line" href="domki/#b">Zobacz domek</a></div></div></article><article class="card">
+    <img src="img/taras-domku-puck.jpg" alt="Domek 2-sypialniowy dla 6 osób w Pucku" loading="lazy" width="500" height="375">
+    <div class="card-body"><span class="guests-tag">do 6 osób</span><h3>Domek 2-sypialniowy dla 6 osób</h3><p class="muted" style="font-size:.93rem">Dla dwóch rodzin albo większej grupy. Dwie osobne sypialnie, duży stół na 6 osób w środku i drugi na tarasie.</p>
+    <div class="card-foot"><div class="price">od <b>490 zł</b> / noc</div><a class="btn btn-line" href="domki/#c">Zobacz domek</a></div></div></article></div>
+</div></section>
+<section style="background:var(--sand)"><div class="wrap">
+  <h2>Co robić w okolicy Pucka?</h2>
+  <p class="lead">Plaża, molo i port są w zasięgu spaceru. Autem w kilkanaście minut dojedziesz do Władysławowa i na Rozewie, a w niecałą godzinę na koniec Półwyspu Helskiego.</p>
+  <div class="attr-grid"><article class="attr"><figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Pier_in_Puck.jpg/960px-Pier_in_Puck.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Molo w Pucku nad Zatoką Pucką" loading="lazy" width="960" height="640"><figcaption>fot. <a href="https://commons.wikimedia.org/wiki/File:Pier_in_Puck.jpg" rel="nofollow noopener" target="_blank">autor na Wikimedia Commons</a>, CC BY-SA 3.0</figcaption></figure><div class="attr-body"><span class="km">1,2 km</span><h3>Molo i plaża miejska</h3><p>Spacer molo z widokiem na Zatokę Pucką i Półwysep Helski. Obok plaża miejska, a 1 km od domków Dzika Plaża.</p></div></article><article class="attr"><figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Hel_fokarium_16.jpg/960px-Hel_fokarium_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Foka w fokarium na Helu" loading="lazy" width="960" height="640"><figcaption>fot. <a href="https://commons.wikimedia.org/wiki/File:Hel_fokarium_16.jpg" rel="nofollow noopener" target="_blank">Zala</a>, CC BY-SA 4.0</figcaption></figure><div class="attr-body"><span class="km">45,4 km autem, ok. 61 min</span><h3>Fokarium na Helu</h3><p>Fokarium Stacji Morskiej Uniwersytetu Gdańskiego - z bliska zobaczysz foki szare i ich karmienie. Atrakcja numer jeden dla dzieci.</p></div></article><article class="attr"><figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Latarnia_morska_Rozewie_3.JPG/960px-Latarnia_morska_Rozewie_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Czerwona latarnia morska na Rozewiu" loading="lazy" width="960" height="640"><figcaption>fot. <a href="https://commons.wikimedia.org/wiki/File:Latarnia_morska_Rozewie_3.JPG" rel="nofollow noopener" target="_blank">Geociekawostki</a>, CC BY-SA 3.0 pl</figcaption></figure><div class="attr-body"><span class="km">17,8 km autem, ok. 22 min</span><h3>Latarnia morska Rozewie</h3><p>Zabytkowa latarnia z Muzeum Latarnictwa. Z galerii widać morze i wybrzeże aż po Hel.</p></div></article></div>
+  <p style="margin-top:24px"><a class="btn btn-line" href="okolica/">Wszystkie atrakcje w okolicy</a></p>
+</div></section>
+<section id="opinie"><div class="wrap">
+  <h2>Co mówią goście?</h2>
+  <p class="lead">Średnia 9,3 na 10 z 39 opinii gości na Booking.com. Najczęściej chwalą plac zabaw, czystość i to, że do plaży i sklepów jest blisko, a w okolicy jest cicho.</p>
+  <div class="reviews">
+    <div class="score-box"><div class="big">9,3</div><div style="font-weight:700;font-size:1.2rem;margin-top:4px">Znakomity</div><p>39 opinii zweryfikowanych gości<br>gospodarz oceniony na 9,6</p></div>
+    <div><div class="bars" id="bars"></div>
+      <div class="themes"><span>duży ogrodzony plac zabaw</span><span>idealne dla rodzin z dziećmi</span><span>czysto i zadbane</span><span>dobrze wyposażona kuchnia</span><span>blisko plaża i sklepy</span><span>cicha okolica</span><span>miły gospodarz</span></div>
     </div>
   </div>
-</section>
-
-<section id="galeria">
-  <div class="wrap">
-    <h2>Jak wyglądają domki w środku i na zewnątrz?</h2>
-    <p class="lead">Jasne, drewniane wnętrza w morskim klimacie, tarasy ze stołem i ogród z placem zabaw. Kliknij zdjęcie, żeby je powiększyć.</p>
-    <div class="gallery" id="gallery"></div>
-  </div>
-</section>
-
-<section id="opinie" style="background:var(--sand)">
-  <div class="wrap">
-    <h2>Co mówią goście?</h2>
-    <p class="lead">Średnia 9,3 na 10 z 39 opinii gości, którzy byli u nas na Booking.com. Najczęściej chwalą plac zabaw, czystość i to, że do plaży i sklepów jest blisko, a w okolicy jest cicho.</p>
-    <div class="reviews">
-      <div class="score-box">
-        <div class="big">9,3</div>
-        <div style="font-weight:700;font-size:1.2rem;margin-top:4px">Znakomity</div>
-        <p>39 opinii zweryfikowanych gości<br>gospodarz oceniony na 9,6</p>
-      </div>
-      <div>
-        <div class="bars" id="bars"></div>
-        <div class="themes">
-          <span>duży ogrodzony plac zabaw</span><span>idealne dla rodzin z dziećmi</span><span>czysto i zadbane</span><span>dobrze wyposażona kuchnia</span><span>blisko plaża i sklepy</span><span>cicha okolica</span><span>miły gospodarz</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="okolica">
-  <div class="wrap">
-    <h2>Gdzie są domki i co jest w pobliżu?</h2>
-    <p class="lead">Domki stoją przy ul. Drzeżdżona 10 w Pucku, w spokojnej części miasta. Pieszo dojdziesz do plaży, portu jachtowego, sklepów i restauracji, a obok biegnie trasa rowerowa z rowerami miejskimi Mevo.</p>
-    <div class="two">
-      <ul class="dist">
-        <li><span>Dzika Plaża</span><b>1 km</b></li>
-        <li><span>Plaża Zielona</span><b>1,1 km</b></li>
-        <li><span>Plaża miejska w Pucku</span><b>1,2 km</b></li>
-        <li><span>Port jachtowy, molo, Fara św. Piotra i Pawła, muzeum „Szpitalik", huta szkła z pokazami</span><b>w Pucku</b></li>
-        <li><span>Park wodny z rekinami</span><b>13 km</b></li>
-        <li><span>Gdynia - port</span><b>25 km</b></li>
-        <li><span>Lotnisko Gdańsk</span><b>53 km</b></li>
-      </ul>
-      <div class="map">
-        <iframe title="Mapa dojazdu do domków w Pucku" loading="lazy" src="https://maps.google.com/maps?q=Drze%C5%BCd%C5%BCona%2010%2C%2084-100%20Puck&amp;z=15&amp;output=embed"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="zasady" style="background:var(--sand)">
-  <div class="wrap">
-    <h2>Zasady pobytu w skrócie</h2>
-    <p class="lead">Najważniejsze informacje przed przyjazdem. Pełny regulamin dostajesz razem z potwierdzeniem rezerwacji.</p>
-    <table>
-      <tr><th>Zameldowanie</th><td>16:00-22:00 (prosimy o informację o godzinie przyjazdu)</td></tr>
-      <tr><th>Wymeldowanie</th><td>7:00-10:00</td></tr>
-      <tr><th>Dzieci</th><td>W każdym wieku. Łóżeczko dla dziecka 0-3 lat bezpłatnie, na życzenie. Dodatkowych łóżek nie ma.</td></tr>
-      <tr><th>Zwierzęta</th><td>Niewielkie zwierzęta mile widziane, 50 zł za dzień, miski na miejscu</td></tr>
-      <tr><th>Parking</th><td>Bezpłatny, ogrodzony, na terenie posesji</td></tr>
-      <tr><th>Cisza nocna</th><td>23:00-7:00. Imprezy, wieczory panieńskie i kawalerskie są niedozwolone.</td></tr>
-      <tr><th>Sezon</th><td>Maj - wrzesień</td></tr>
-    </table>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Pytania przed rezerwacją</h2>
-    <details><summary>Czy w domku jest wszystko do gotowania?</summary><p>Tak. W aneksie jest płyta kuchenna, lodówka, czajnik, ekspres do kawy, toster i podstawowe naczynia. Na zewnątrz jest grill i miejsce na ognisko.</p></details>
-    <details><summary>Czy można przyjechać z psem?</summary><p>Tak, z niewielkim zwierzęciem. Opłata wynosi 50 zł za dzień, miski są na miejscu.</p></details>
-    <details><summary>Ile jest do plaży?</summary><p>Do Dzikiej Plaży jest ok. 1 km. Blisko jest też port jachtowy, sklepy i restauracje.</p></details>
-    <details><summary>Czy domki nadają się dla małych dzieci?</summary><p>Tak. Jest ogrodzony plac zabaw, a na życzenie bezpłatne łóżeczko dla dziecka do 3 lat. Goście chwalą też krzesełko do karmienia i rzeczy dla maluchów w domkach.</p></details>
-  </div>
-</section>
+  <div class="cta-band"><div><h3>Lato 2027 - sprawdź wolne terminy</h3><p>Wybierz daty, domek i wyślij rezerwację bezpośrednio do gospodarza.</p></div><a class="btn btn-wood" href="rezerwacja/">Sprawdź wolne terminy</a></div>
+</div></section>
 </main>
-
 <footer>
   <div class="wrap">
     <div class="foot">
       <div>
         <h4>Domki wypoczynkowe Zosia i Helenka</h4>
-        <p>ul. Drzeżdżona 10, 84-100 Puck<br>telefon i e-mail gospodarza (uzupełnimy)</p>
-        <p style="margin-top:10px"><a href="https://www.facebook.com/" rel="nofollow">Facebook</a> · <a href="#opinie">Opinie gości</a></p>
+        <p>ul. Drzeżdżona 10, 84-100 Puck<br>telefon i e-mail gospodarza (uzupełnimy)<br>Sezon: maj - wrzesień</p>
       </div>
       <div>
         <h4>Na stronie</h4>
-        <p><a href="#domki">Domki</a><br><a href="#kalendarz">Wolne terminy</a><br><a href="#galeria">Galeria</a><br><a href="#okolica">Okolica</a></p>
+        <p><a href="domki/">Domki</a><br><a href="rezerwacja/">Wolne terminy</a><br><a href="galeria/">Galeria</a><br><a href="okolica/">Okolica i atrakcje</a></p>
       </div>
       <div>
         <h4>Informacje</h4>
-        <p><a href="#zasady">Zasady pobytu</a><br><a href="#">Regulamin</a><br><a href="#">Polityka prywatności</a></p>
+        <p><a href="zasady-pobytu/">Zasady pobytu</a><br><a href="kontakt/">Kontakt i dojazd</a><br><a href="#">Regulamin</a><br><a href="#">Polityka prywatności</a></p>
       </div>
     </div>
     <div class="copy"><span>© 2027 Domki wypoczynkowe Zosia i Helenka</span><span>Strona: <a href="https://dmcompany.com.pl">Dominik Mendrala Company</a></span></div>
   </div>
 </footer>
+<a class="btn btn-wood mobile-cta" href="rezerwacja/">Sprawdź wolne terminy</a>
 
-<a class="btn btn-wood mobile-cta" href="#kalendarz">Sprawdź wolne terminy</a>
-
-<div class="lightbox" id="lb" role="dialog" aria-label="Powiększone zdjęcie">
-  <button class="lb-close" id="lbClose" aria-label="Zamknij">×</button>
-  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Poprzednie zdjęcie">‹</button>
-  <img id="lbImg" alt="">
-  <button class="lb-btn lb-next" id="lbNext" aria-label="Następne zdjęcie">›</button>
-</div>
-
-<div class="modal" id="modal" role="dialog" aria-label="Rezerwacja">
-  <div class="modal-box">
-    <button class="x" id="mClose" aria-label="Zamknij">×</button>
-    <div id="mForm">
-      <h3>Rezerwacja domku</h3>
-      <div class="mini" id="mSummary"></div>
-      <form id="bookForm">
-        <label class="f">Imię i nazwisko<input required autocomplete="name" placeholder="Jan Kowalski"></label>
-        <label class="f">E-mail<input type="email" required autocomplete="email" placeholder="jan.kowalski@example.com"></label>
-        <label class="f">Telefon<input type="tel" required autocomplete="tel" placeholder="500 000 000"></label>
-        <label class="f">Liczba osób i uwagi (np. pies, łóżeczko, godzina przyjazdu)<textarea rows="3"></textarea></label>
-        <label class="chk"><input type="checkbox" required> Zapoznałem się z regulaminem i polityką prywatności. Dane z formularza służą tylko do obsługi rezerwacji.</label>
-        <button class="btn btn-wood" style="width:100%;margin-top:16px" type="submit">Wyślij rezerwację</button>
-      </form>
-    </div>
-    <div class="ok-msg" id="mOk">
-      <div class="ico">✓</div>
-      <h3>Dziękujemy!</h3>
-      <p style="color:var(--muted);margin-top:8px">Na prawdziwej stronie w tym miejscu gość dostaje potwierdzenie, a gospodarz maila z rezerwacją. W wizualizacji nic nie zostało wysłane.</p>
-    </div>
-  </div>
-</div>
-
-<script>
-const NAMES = {"190221243":"sypialnia-lozka-pojedyncze","191359752":"lazienka-domek","191359889":"salon-z-kuchnia-domek","191359989":"sypialnia-domek-puck","254214328":"salon-domek-puck","261237382":"taras-domku-puck","261237951":"domki-letniskowe-puck","288088390":"aneks-kuchenny-domek","602580644":"scianka-wspinaczkowa-plac-zabaw","602580645":"szachy-ogrod","633219904":"plac-zabaw-domki-puck"};
-const IMG = id => `img/${NAMES[id]}.jpg`;
-const THUMB = IMG;
-
-/* Domki - ceny przykładowe do podmiany na cennik właściciela */
-const CABINS = [
-  {id:'a', name:'Domek 1-sypialniowy', sub:'łóżko podwójne + pojedyncze', max:5, price:380, img:'191359889',
-   feat:['Sypialnia: 1 łóżko podwójne i 1 pojedyncze','Salon z rozkładaną sofą','Aneks kuchenny, ekspres, toster','Łazienka z prysznicem, suszarka','Taras ze stołem']},
-  {id:'b', name:'Domek 1-sypialniowy', sub:'3 łóżka pojedyncze', max:5, price:380, img:'288088390',
-   feat:['Sypialnia: 3 łóżka pojedyncze','Salon z rozkładaną sofą','Aneks kuchenny, lodówka, płyta','Łazienka z prysznicem, suszarka','Taras ze stołem']},
-  {id:'c', name:'Domek 2-sypialniowy', sub:'dla 2 rodzin lub większej grupy', max:6, price:490, img:'261237382',
-   feat:['2 sypialnie: łóżko podwójne i 2 pojedyncze','Salon z rozkładaną sofą','Duży stół dla 6 osób','Łazienka z prysznicem, suszarka','Taras ze stołem i grillem']},
-];
-
-/* Zajęte noce - przykładowe, w prawdziwej stronie z kalendarza właściciela */
-const BUSY = {
-  a:[['2027-06-25','2027-07-04'],['2027-07-11','2027-07-25'],['2027-08-01','2027-08-16'],['2027-08-22','2027-08-29']],
-  b:[['2027-07-01','2027-07-08'],['2027-07-18','2027-08-08'],['2027-08-14','2027-08-21'],['2027-06-12','2027-06-15']],
-  c:[['2027-07-04','2027-07-11'],['2027-07-25','2027-08-15'],['2027-05-01','2027-05-04'],['2027-06-19','2027-06-26']],
-};
-const SEASON_FROM = new Date(2027,4,1), SEASON_TO = new Date(2027,8,30);
-const MONTHS = ['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
-const MONTHS_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
-
-const d0 = s => { const [y,m,d]=s.split('-').map(Number); return new Date(y,m-1,d); };
-const key = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-const addDays = (d,n) => new Date(d.getFullYear(), d.getMonth(), d.getDate()+n);
-const nightsBetween = (a,b) => Math.round((b-a)/864e5);
-const fmt = d => `${d.getDate()} ${MONTHS_GEN[d.getMonth()]} ${d.getFullYear()}`;
-const zl = n => n.toLocaleString('pl-PL') + ' zł';
-
-function isBusyNight(cab, d){ // noc z dnia d na d+1
-  return BUSY[cab].some(([a,b]) => d >= d0(a) && d < d0(b));
-}
-function inSeason(d){ return d >= SEASON_FROM && d <= SEASON_TO; }
-function rangeFree(cab, a, b){
-  for(let d=new Date(a); d<b; d=addDays(d,1)){ if(!inSeason(d) || isBusyNight(cab,d)) return false; }
-  return true;
-}
-
-let cabin = 'a', viewMonth = 6, viewYear = 2027, selIn = null, selOut = null;
-
-/* karty domków */
-function renderCards(guests, a, b){
-  const box = document.getElementById('cards');
-  box.innerHTML = CABINS.map(c => {
-    let av = '';
-    if(a && b){
-      const ok = rangeFree(c.id,a,b) && guests <= c.max;
-      av = `<span class="avail ${ok?'free':'taken'}">${ok ? 'Wolny w wybranym terminie' : (guests > c.max ? 'Za mało miejsc' : 'Zajęty w tym terminie')}</span>`;
-    }
-    return `<article class="card">
-      <img src="${THUMB(c.img)}" alt="${c.name} w Pucku - wnętrze" loading="lazy" width="500" height="375">
-      <div class="card-body">
-        <span class="guests-tag">do ${c.max} osób</span>
-        <h3>${c.name}</h3>
-        <div style="color:var(--muted);font-size:.92rem;margin-top:-6px">${c.sub}</div>
-        ${av}
-        <ul>${c.feat.map(f=>`<li>${f}</li>`).join('')}</ul>
-        <div class="card-foot">
-          <div class="price">od <b>${c.price} zł</b> / noc</div>
-          <button class="btn btn-line" type="button" onclick="pickCabin('${c.id}')">Wolne terminy</button>
-        </div>
-      </div>
-    </article>`;
-  }).join('');
-}
-
-/* zakładki i kalendarz */
-function renderTabs(){
-  document.getElementById('tabs').innerHTML = CABINS.map(c =>
-    `<button type="button" class="tab ${c.id===cabin?'on':''}" onclick="setCabin('${c.id}')">${c.name} · ${c.sub.split(' ')[0]==='dla'?'6 os.':c.sub}</button>`).join('');
-}
-function monthHTML(y,m){
-  const first = new Date(y,m,1), days = new Date(y,m+1,0).getDate();
-  const offset = (first.getDay()+6)%7;
-  let h = `<div class="month"><h4>${MONTHS[m]} ${y}</h4><div class="grid">`;
-  ['pn','wt','śr','cz','pt','so','nd'].forEach(x => h += `<div class="dow">${x}</div>`);
-  for(let i=0;i<offset;i++) h += `<div class="day empty"></div>`;
-  const price = CABINS.find(c=>c.id===cabin).price;
-  for(let d=1; d<=days; d++){
-    const dt = new Date(y,m,d);
-    let cls = 'day', dis = false, lab = '';
-    const seasonEnd = key(dt) === key(addDays(SEASON_TO,0));
-    if(!inSeason(dt)){ cls += ' off'; dis = true; }
-    else if(isBusyNight(cabin,dt) && !(selIn && !selOut && dt > selIn && !isBusyNight(cabin,addDays(dt,-1)) && rangeFree(cabin,selIn,dt))){ cls += ' busy'; dis = true; }
-    else if(!seasonEnd){ lab = `<small>${price}</small>`; }
-    if(selIn && key(dt)===key(selIn)) cls += ' start';
-    if(selOut && key(dt)===key(selOut)) cls += ' end';
-    if(selIn && selOut && dt > selIn && dt < selOut) cls += ' in-range';
-    h += `<button type="button" class="${cls}" ${dis?'disabled':''} data-d="${key(dt)}" aria-label="${fmt(dt)}">${d}${lab}</button>`;
-  }
-  return h + `</div></div>`;
-}
-function renderCal(){
-  const m2 = (viewMonth+1)%12, y2 = viewMonth===11 ? viewYear+1 : viewYear;
-  document.getElementById('months').innerHTML = monthHTML(viewYear,viewMonth) + monthHTML(y2,m2);
-  document.getElementById('calTitle').textContent = 'Sezon 2027';
-  document.getElementById('prev').disabled = (viewYear===2027 && viewMonth<=4);
-  document.getElementById('next').disabled = (viewYear===2027 && viewMonth>=7);
-  document.querySelectorAll('#months .day[data-d]').forEach(b => b.addEventListener('click', () => clickDay(d0(b.dataset.d))));
-  renderSummary();
-}
-function clickDay(d){
-  if(!selIn || selOut || d <= selIn){ selIn = d; selOut = null; }
-  else if(rangeFree(cabin, selIn, d)){ selOut = d; }
-  else { selIn = d; selOut = null; }
-  renderCal();
-}
-function renderSummary(){
-  const c = CABINS.find(x=>x.id===cabin);
-  document.getElementById('sumCabin').textContent = `${c.name} (do ${c.max} os.)`;
-  document.getElementById('sumIn').textContent = selIn ? fmt(selIn) : 'wybierz w kalendarzu';
-  document.getElementById('sumOut').textContent = selOut ? fmt(selOut) : (selIn ? 'kliknij dzień wyjazdu' : '-');
-  const n = selIn && selOut ? nightsBetween(selIn, selOut) : 0;
-  document.getElementById('sumNights').textContent = n ? n : '-';
-  document.getElementById('sumTotal').textContent = n ? zl(n*c.price) : '-';
-  document.getElementById('bookBtn').disabled = !n;
-}
-function setCabin(id){ cabin = id; if(selIn && selOut && !rangeFree(id,selIn,selOut)){ selOut = null; } renderTabs(); renderCal(); }
-function pickCabin(id){ setCabin(id); document.getElementById('kalendarz').scrollIntoView(); }
-document.getElementById('prev').onclick = () => { viewMonth--; renderCal(); };
-document.getElementById('next').onclick = () => { viewMonth++; renderCal(); };
-
-/* pasek wyszukiwania w hero */
-document.getElementById('searchForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const a = d0(document.getElementById('sIn').value), b = d0(document.getElementById('sOut').value);
-  const g = +document.getElementById('sGuests').value;
-  if(!(b > a)) { alert('Data wyjazdu musi być po dacie przyjazdu.'); return; }
-  renderCards(g, a, b);
-  const free = CABINS.find(c => rangeFree(c.id,a,b) && g <= c.max);
-  cabin = free ? free.id : cabin; selIn = a; selOut = free ? b : null;
-  viewMonth = a.getMonth(); viewYear = a.getFullYear(); if(viewMonth > 7) viewMonth = 7;
-  renderTabs(); renderCal();
-  document.getElementById('domki').scrollIntoView();
-});
-
-/* okno rezerwacji */
-const modal = document.getElementById('modal');
-document.getElementById('bookBtn').onclick = () => {
-  const c = CABINS.find(x=>x.id===cabin), n = nightsBetween(selIn,selOut);
-  document.getElementById('mSummary').innerHTML = `<b>${c.name}</b> (do ${c.max} os.)<br>${fmt(selIn)} - ${fmt(selOut)} · ${n} ${n===1?'noc':(n<5?'noce':'nocy')}<br>Razem: <b>${zl(n*c.price)}</b>`;
-  document.getElementById('mForm').style.display = ''; document.getElementById('mOk').style.display = 'none';
-  modal.classList.add('on');
-};
-document.getElementById('mClose').onclick = () => modal.classList.remove('on');
-modal.addEventListener('click', e => { if(e.target === modal) modal.classList.remove('on'); });
-document.getElementById('bookForm').addEventListener('submit', e => {
-  e.preventDefault(); // wizualizacja - nic nie jest wysyłane
-  document.getElementById('mForm').style.display = 'none'; document.getElementById('mOk').style.display = 'block';
-});
-
-/* galeria */
-const PHOTOS = [
-  ['261237951','Drewniane domki wypoczynkowe w Pucku - widok z zewnątrz'],
-  ['633219904','Ogrodzony plac zabaw z huśtawkami przy domkach'],
-  ['288088390','Aneks kuchenny ze stołem i żółtymi krzesłami'],
-  ['254214328','Salon z rozkładaną sofą i telewizorem'],
-  ['191359989','Sypialnia z dwoma łóżkami w morskim stylu'],
-  ['261237382','Taras domku ze stołem i ławkami'],
-  ['602580644','Ścianka wspinaczkowa i bujaki na placu zabaw'],
-  ['191359752','Łazienka z prysznicem w domku'],
-  ['190221243','Sypialnia z łóżkami pojedynczymi'],
-  ['602580645','Stolik do gry w szachy w ogrodzie'],
-];
-const gal = document.getElementById('gallery');
-gal.innerHTML = PHOTOS.map((p,i) => `<button type="button" class="${i===0||i===5?'big':''}" data-i="${i}"><img src="${THUMB(p[0])}" alt="${p[1]}" loading="lazy" width="500" height="375"></button>`).join('');
-let lbI = 0; const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
-function showLb(i){ lbI = (i+PHOTOS.length)%PHOTOS.length; lbImg.src = IMG(PHOTOS[lbI][0]); lbImg.alt = PHOTOS[lbI][1]; lb.classList.add('on'); }
-gal.querySelectorAll('button').forEach(b => b.onclick = () => showLb(+b.dataset.i));
-document.getElementById('lbPrev').onclick = () => showLb(lbI-1);
-document.getElementById('lbNext').onclick = () => showLb(lbI+1);
-document.getElementById('lbClose').onclick = () => lb.classList.remove('on');
-lb.addEventListener('click', e => { if(e.target === lb) lb.classList.remove('on'); });
-document.addEventListener('keydown', e => {
-  if(e.key === 'Escape'){ lb.classList.remove('on'); modal.classList.remove('on'); }
-  if(lb.classList.contains('on') && e.key === 'ArrowRight') showLb(lbI+1);
-  if(lb.classList.contains('on') && e.key === 'ArrowLeft') showLb(lbI-1);
-});
-
-/* oceny */
-const SCORES = [['Personel',9.5],['Komfort',9.4],['Czystość',9.3],['Lokalizacja',9.0],['Stosunek jakości do ceny',9.0],['Udogodnienia',9.0],['Bezpłatne Wi-Fi',10]];
-document.getElementById('bars').innerHTML = SCORES.map(([n,v]) =>
-  `<div class="bar-row"><span>${n}</span><div class="bar"><i style="width:${v*10}%"></i></div><b>${v===10?'10':v.toFixed(1).replace('.',',')}</b></div>`).join('');
-
-renderCards(); renderTabs(); renderCal();
-</script>
+<script src="assets/app.js"></script>
 </body>
 </html>

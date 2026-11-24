@@ -1,7 +1,7 @@
 :root{
-  --navy:#0f3349; --sea:#16707f; --sea-l:#e3f1f2; --sand:#f6f1e8; --wood:#c9762f; --wood-d:#a85f22;
-  --ink:#1d2a33; --muted:#5d6b75; --line:#e2e6e9; --ok:#1f8a4c; --busy:#c9ced3; --white:#fff;
-  --r:14px; --shadow:0 10px 30px rgba(15,51,73,.12);
+  --navy:#23392f; --sea:#3c6e52; --sea-l:#e8f0ea; --sand:#f6f1e8; --wood:#c9762f; --wood-d:#a85f22;
+  --ink:#1d2a33; --muted:#4b5751; --line:#e2e6e9; --ok:#1f8a4c; --busy:#c9ced3; --white:#fff;
+  --r:14px; --shadow:0 10px 30px rgba(35,57,47,.12);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -20,7 +20,7 @@ section{padding:72px 0}
 .btn:disabled{opacity:.45;cursor:not-allowed}
 
 /* pasek demo */
-.demo-bar{background:var(--navy);color:#cfe3ea;font-size:.82rem;text-align:center;padding:6px 12px}
+.demo-bar{background:var(--navy);color:#dbe7de;font-size:.82rem;text-align:center;padding:6px 12px}
 .demo-bar b{color:#fff}
 
 /* nagłówek */
@@ -42,9 +42,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
 
 /* hero */
 .hero{position:relative;min-height:620px;display:flex;align-items:flex-end;padding:0 0 60px;color:#fff;
-  background:linear-gradient(180deg,rgba(15,51,73,.15) 0%,rgba(15,51,73,.25) 45%,rgba(15,51,73,.85) 100%),url("img/domki-letniskowe-puck.jpg") center/cover}
+  background:linear-gradient(180deg,rgba(35,57,47,.15) 0%,rgba(35,57,47,.25) 45%,rgba(35,57,47,.85) 100%),url("img/domki-letniskowe-puck.jpg") center/cover}
 .hero h1{color:#fff;font-size:clamp(2rem,4.6vw,3.3rem);max-width:780px;margin-bottom:14px}
-.hero p{max-width:640px;font-size:1.12rem;color:#eaf3f6}
+.hero p{max-width:640px;font-size:1.12rem;color:#f0f5f1}
 .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 28px}
 .badge{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:6px 14px;font-size:.9rem;font-weight:600}
 .badge.score{background:#fff;color:var(--navy)}
@@ -137,7 +137,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
 @media(max-width:860px){.reviews{grid-template-columns:1fr}}
 .score-box{background:var(--navy);color:#fff;border-radius:var(--r);padding:26px;text-align:center}
 .score-box .big{font-family:Georgia,serif;font-size:3.4rem;line-height:1}
-.score-box p{color:#cfe3ea;font-size:.92rem;margin-top:6px}
+.score-box p{color:#dbe7de;font-size:.92rem;margin-top:6px}
 .bars{display:flex;flex-direction:column;gap:12px}
 .bar-row{display:grid;grid-template-columns:200px 1fr 40px;gap:12px;align-items:center;font-size:.94rem}
 .bar{height:9px;background:var(--line);border-radius:9px;overflow:hidden}
@@ -167,11 +167,11 @@ summary{font-weight:700;cursor:pointer;color:var(--navy)}
 details p{margin-top:10px;color:var(--muted)}
 
 /* stopka */
-footer{background:var(--navy);color:#cfe3ea;padding:50px 0 26px}
+footer{background:var(--navy);color:#dbe7de;padding:50px 0 26px}
 .foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
 @media(max-width:760px){.foot{grid-template-columns:1fr}}
 footer h4{color:#fff;font-family:Georgia,serif;margin-bottom:10px;font-size:1.1rem}
-footer a{color:#cfe3ea}
+footer a{color:#dbe7de}
 .copy{border-top:1px solid rgba(255,255,255,.15);margin-top:30px;padding-top:16px;font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
 /* okno rezerwacji */
@@ -196,8 +196,8 @@ footer a{color:#cfe3ea}
 .muted{color:var(--muted)}
 .page-hero{padding:64px 0 48px;color:#fff;background-size:cover;background-position:center}
 .page-hero h1{color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);max-width:860px;margin-bottom:10px}
-.page-hero p{max-width:700px;color:#eaf3f6;font-size:1.08rem}
-.crumbs{font-size:.85rem;color:#cfe3ea;margin-bottom:14px}
+.page-hero p{max-width:700px;color:#f0f5f1;font-size:1.08rem}
+.crumbs{font-size:.85rem;color:#dbe7de;margin-bottom:14px}
 .crumbs a{color:#fff}
 .attr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
 @media(max-width:960px){.attr-grid{grid-template-columns:repeat(2,1fr)}}
@@ -214,7 +214,7 @@ footer a{color:#cfe3ea}
 .group:first-of-type{margin-top:28px}
 .cta-band{background:var(--navy);color:#fff;border-radius:var(--r);padding:32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:44px}
 .cta-band h3{color:#fff;font-size:1.5rem}
-.cta-band p{color:#cfe3ea}
+.cta-band p{color:#dbe7de}
 .steps{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
 .steps span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-weight:700;font-size:.88rem;color:var(--muted)}
 .steps span b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--sea);color:#fff;margin-right:6px;font-size:.78rem}
@@ -260,3 +260,83 @@ footer a{color:#cfe3ea}
   header.open .menu a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
   header .wrap{position:relative}
 }
+
+/* ===== telefon - dopracowanie ===== */
+.db-short{display:none}
+@media(max-width:760px){
+  body{font-size:17px;line-height:1.65}
+  section{padding:46px 0}
+  h2{font-size:1.55rem}
+  .lead{font-size:1.04rem;color:#3f4a45}
+  .demo-bar{font-size:.74rem;padding:5px 10px}
+  .db-long{display:none}.db-short{display:inline}
+  .nav{height:62px}
+  .logo-mark{width:36px;height:36px}
+  .logo-txt{font-size:1.05rem}
+  header.open .menu{top:62px}
+  .hero{min-height:0;padding:56px 0 28px;background-position:30% center !important}
+  .hero h1{font-size:1.85rem;margin-bottom:10px}
+  .hero p{font-size:1.04rem;line-height:1.6}
+  .badges{gap:6px;margin:14px 0 18px}
+  .badge{font-size:.8rem;padding:4px 10px}
+  .badge:nth-child(n+3){display:none}
+  .search{border-width:2px;border-radius:12px}
+  .search label{padding:10px 14px;font-size:.7rem}
+  .search input,.search select{font-size:.98rem}
+  .facts{padding:22px 0}
+  .facts .wrap{grid-template-columns:repeat(3,1fr);gap:14px 8px}
+  .fact strong{font-size:1.35rem}
+  .fact span{font-size:.86rem;line-height:1.3;display:block;color:#3f4a45}
+  .fact:nth-child(n+4){display:none}
+  .cards{gap:18px;margin-top:22px}
+  .card-body{padding:16px}
+  .page-hero{padding:38px 0 30px}
+  .page-hero h1{font-size:1.65rem}
+  .page-hero p{font-size:1.02rem}
+  .crumbs{margin-bottom:8px}
+  .attr-grid{gap:16px}
+  .attr-body{padding:14px 16px}
+  .result img{max-height:190px;min-height:0}
+  .result .r-side .price b{font-size:1.4rem}
+  .result .r-side .btn{width:100%}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+  .tab{white-space:nowrap;padding:7px 13px;font-size:.84rem}
+  .cal-box{padding:14px;gap:18px;margin-top:18px}
+  .day{border-radius:6px;font-size:.95rem}
+  .day small{font-size:.6rem}
+  .summary{position:static;padding:16px}
+  .steps span{font-size:.85rem;padding:6px 11px}
+  .reviews{gap:22px}
+  .score-box{padding:18px}
+  .score-box .big{font-size:2.6rem}
+  .bar-row{grid-template-columns:130px 1fr 34px;font-size:.95rem}
+  .cta-band{padding:22px;margin-top:30px}
+  .cta-band h3{font-size:1.25rem}
+  .cta-band .btn{width:100%}
+  .cabin-detail{padding:30px 0}
+  .pics{height:240px}
+  .onsite{grid-template-columns:1fr;gap:10px}
+  .onsite div{padding:16px}
+  table{font-size:1rem}
+  th,td{padding:10px 12px;display:block;width:100%}
+  th{border-bottom:0;padding-bottom:2px;background:transparent}
+  tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  td{border-bottom:0;padding-top:0}
+  details{padding:14px 16px}
+  .gallery{gap:6px;grid-auto-rows:130px}
+  .mobile-cta{left:10px;right:10px;bottom:10px;padding:14px}
+  footer{padding-top:36px}
+}
+@media(max-width:760px){
+  .attr-body p,.card ul,.result .r-body ul,.equip,.card p.muted{font-size:1rem !important;color:#3f4a45}
+  .hint,.legend,.credits{font-size:.9rem}
+  .sum-row{font-size:1rem}
+  .hero{background-image:linear-gradient(180deg,rgba(35,57,47,.55) 0%,rgba(35,57,47,.7) 50%,rgba(35,57,47,.92) 100%),url('../img/domki-letniskowe-puck.jpg') !important}
+  .page-hero{background-blend-mode:normal}
+  .menu a{font-size:1.05rem}
+  details summary{font-size:1.02rem}
+  details p{font-size:1rem;color:#3f4a45}
+  .guests-tag,.km{font-size:.88rem}
+}
+.cal-box>*,.cards>*,.attr-grid>*,.results>*,.two>*,.contact-grid>*,.reviews>*,.cabin-detail>*,.result>*{min-width:0}
+.sync{margin-top:14px;background:var(--sea-l);color:var(--navy);border-radius:10px;padding:10px 14px;font-size:.92rem;font-weight:600}
